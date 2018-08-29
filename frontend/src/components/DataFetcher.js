@@ -6,7 +6,7 @@ class DataFetcher extends Component {
     render: PropTypes.func.isRequired
   };
   state = {
-      data: [],
+      data: {},
       loaded: false,
       placeholder: "Loading..."
     };
@@ -18,7 +18,11 @@ class DataFetcher extends Component {
         }
         return response.json();
       })
-      .then(data => this.setState({ data: data, loaded: true }));
+      .then(data => console.log(data))
+      .then(data => {
+        // console.log(data.coindesk_data)
+        this.setState({ data: data.coindesk_data, loaded: true })
+      });
   }
   render() {
     const { data, loaded, placeholder } = this.state;

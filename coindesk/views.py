@@ -13,4 +13,4 @@ class CoinDeskListCreate(APIView):
         requested_data = get_coindesk_data()
         if not requested_data:
             return Response(requested_data, status=400)
-        return Response([requested_data], status=200)
+        return Response(requested_data, status=200)
