@@ -14,7 +14,7 @@ class DataFetcher extends Component {
     fetch(this.props.endpoint)
       .then(response => {
         if (response.status !== 200) {
-          return this.setState({ placeholder: "Something went wrong" });
+          return this.setState({ data: {}, placeholder: "Something went wrong" });
         }
         return response.json();
       })
