@@ -7,4 +7,6 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('', include('testapp.urls')),
+    path('', include('frontend.urls')),
+
 ]
