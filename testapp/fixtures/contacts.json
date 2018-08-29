@@ -1,0 +1,22 @@
+[
+    {
+        "model": "testapp.contact",
+        "pk": 1,
+        "fields": {
+            "name": "Ann B",
+            "email": "t@gmail.com",
+            "message": "fixture, not a real person 1",
+            "created_at": "2018-08-1% 00:00:00"
+        }
+    },
+    {
+        "model": "testapp.contact",
+        "pk": 2,
+        "fields": {
+            "name": "Bobby C",
+            "email": "Bob@bc.ca",
+            "message": "just a fixture, wish I was real",
+            "created_at": "2018-09-15 00:00:00"
+        }
+    }
+]

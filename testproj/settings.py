@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'testapp'
+    'testapp',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             {
-            os.path.join(BASE_DIR, 'build')
+            os.path.join(BASE_DIR, 'dir')
             }
         ],
         'APP_DIRS': True,
@@ -70,6 +71,10 @@ TEMPLATES = [
             ],
         },
     },
+]
+
+STATICFILES_DIRS = [
+  os.path.join(BASE_DIR, 'build/static'),
 ]
 
 WSGI_APPLICATION = 'testproj.wsgi.application'
